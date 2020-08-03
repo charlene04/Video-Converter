@@ -6,7 +6,7 @@ const argv = yargs.argv;
 
 
 var inFilename = __dirname + "/tmp/" + argv.current;
-var outFilename = __dirname + "/converts/" + argv.new;
+var outFilename = __dirname + "/converted/" + argv.new;
 ffmpeg(inFilename)
   .noAudio()
   .outputOption("-vf", `setpts=PTS/${argv.speed}`)
