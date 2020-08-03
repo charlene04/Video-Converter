@@ -9,7 +9,7 @@ var inFilename = __dirname + "/tmp/" + argv.current;
 var outFilename = __dirname + "/converts/" + argv.new;
 ffmpeg(inFilename)
   .noAudio()
-  .outputOption("-vf", `setpts=(${argv.duration}/25)*PTS`)
+  .outputOption("-vf", `setpts=PTS/${argv.speed}`)
   .save(outFilename)
   .run()
   console.log("Conversion is successful on prompt exit. Kindly wait.")
