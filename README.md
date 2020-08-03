@@ -1,6 +1,6 @@
-#VIDEO DURATION CONVERTER
+#VIDEO SPEED CONVERTER
 
-This is a Video duration converter built using Nodejs and fluent-ffmpeg.
+This is a Video speed converter built using Nodejs and fluent-ffmpeg.
 
 =====================================================================================
 =====================================================================================
